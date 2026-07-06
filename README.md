@@ -90,9 +90,9 @@ $$\text{Offset} = \text{Base Score} - \text{Factor} \times \ln(\text{Base Odds})
 
 Using these, we assign a point value to each feature bin based on its WoE value and the model coefficient:
 
-$$\text{Points}_i = \left( \beta_j \times \text{WoE}_i + \frac{\alpha}{N} \right) \times \text{Factor} + \frac{\text{Offset}}{N}$$
+$$\text{Points}_i = \left( -\beta_j \times \text{WoE}_i - \frac{\alpha}{N} \right) \times \text{Factor} + \frac{\text{Offset}}{N}$$
 
-Where $\beta_j$ is the coefficient for feature $j$, $\alpha$ is the intercept, and $N$ is the number of features.
+Where $\beta_j$ is the coefficient for feature $j$, $\alpha$ is the intercept, and $N$ is the number of features. Note that the negative signs correct for the model predicting probability of default ($Y=1$), ensuring that higher scorecard points correspond to lower default risk (i.e. "Good" credit).
 
 ---
 
