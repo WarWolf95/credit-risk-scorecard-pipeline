@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# Large Datasets
+Source/*.csv
+Source/*.parquet
+Source/splits/
+Source/models/*.pkl
+Source/scored/
+
+# IDE / OS config files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
