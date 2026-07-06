@@ -50,7 +50,7 @@ Before training the Logistic Regression model, variables are binned, and each bi
 ### Weight of Evidence (WoE)
 WoE measures the relative risk of a specific attribute (bin) compared to the overall population. It is calculated as:
 
-$$\text{WoE}_i = \ln \left( \frac{\% \text{ Good}_i}{\% \text{ Bad}_i} \right)$$
+$$\text{WoE}_i = \ln \left( \frac{\text{Prop. Good}_i}{\text{Prop. Bad}_i} \right)$$
 
 *   **Positive WoE**: The bin contains a higher proportion of "Good" (non-defaulting) accounts than "Bad" accounts. It indicates lower risk.
 *   **Negative WoE**: The bin has a higher proportion of "Bad" accounts than "Good" accounts. It indicates higher risk.
@@ -58,7 +58,7 @@ $$\text{WoE}_i = \ln \left( \frac{\% \text{ Good}_i}{\% \text{ Bad}_i} \right)$$
 ### Information Value (IV)
 IV is a metric used to rank variables by their predictive power for feature selection:
 
-$$\text{IV} = \sum_{i=1}^{n} \left( \% \text{ Good}_i - \% \text{ Bad}_i \right) \times \text{WoE}_i$$
+$$\text{IV} = \sum_{i=1}^{n} \left( \text{Prop. Good}_i - \text{Prop. Bad}_i \right) \times \text{WoE}_i$$
 
 **IV Interpretation Rules of Thumb:**
 *   $< 0.02$: Useless for prediction
