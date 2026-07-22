@@ -1,5 +1,8 @@
 # Credit Risk Analysis & Scorecard Modeling
 
+[![CI/CD Pipeline](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF.svg)](.github/workflows/ci.yml)
+[![Tests Passed](https://img.shields.io/badge/Tests-PyTest_Passed-brightgreen.svg)](tests/test_scorecard.py)
+
 This repository contains a production-grade implementation of a Credit Risk modeling pipeline using the LendingClub dataset (2007-2018Q4). The project is structured to demonstrate data preprocessing, feature engineering (including Weight of Evidence binning), model development, performance evaluation, and traditional credit scorecard construction.
 
 ---
