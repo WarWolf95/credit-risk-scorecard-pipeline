@@ -2,8 +2,9 @@ import os
 import pandas as pd
 import pytest
 
-# Constants
-PROJECT_DIR = r"C:\Projects\Credit_Risk_Analysis"
+from pathlib import Path
+
+PROJECT_DIR = Path(__file__).resolve().parent.parent
 RESULTS_DIR = os.path.join(PROJECT_DIR, "Credit_Risk_DA_project", "results")
 PLOTS_DIR = os.path.join(PROJECT_DIR, "Credit_Risk_DA_project", "plots")
 
