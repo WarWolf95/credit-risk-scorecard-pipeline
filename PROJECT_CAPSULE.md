@@ -5,7 +5,7 @@ This capsule acts as the core memory for the Credit Risk Analysis & Scorecard Mo
 ---
 
 ## 1. Project Overview & Context
-*   **Project Path**: `C:\Projects\Credit_Risk_Analysis`
+*   **Project Path**: `Credit_Risk_Analysis/` (repository root)
 *   **Dataset**: `Source/accepted_2007_to_2018Q4.csv` (1.56 GB, 2,260,701 rows, 151 columns).
 *   **Domain**: Credit Risk Modeling (Probability of Default - PD, Weight of Evidence - WoE, Credit Scorecard scaling).
 *   **Key Tech Stack**: Polars (high-performance tabular ETL), PyArrow, Scikit-Learn, LightGBM, Matplotlib, Seaborn.
@@ -30,10 +30,10 @@ The project is currently at:
 *   **Next Action**: Handover complete. All deliverables, evaluation plots, scorecard scales, and unit tests are finalized.
 
 
-For a detailed breakdown of all tasks, check [PROJECT_PROGRESS.md](file:///C:/Projects/Credit_Risk_Analysis/PROJECT_PROGRESS.md).
+For a detailed breakdown of all tasks, check `PROJECT_PROGRESS.md`.
 
 ---
 
 ## 4. References & Documentation
-*   Refer to [README.md](file:///C:/Projects/Credit_Risk_Analysis/README.md) for full explanations of mathematical formulas (PD, LGD, EAD, WoE, IV, and Points-to-Double-the-Odds scaling calculations).
-*   Refer to [requirements.txt](file:///C:/Projects/Credit_Risk_Analysis/requirements.txt) for exact library versions.
+*   Refer to `README.md` for full explanations of mathematical formulas (PD, LGD, EAD, WoE, IV, and Points-to-Double-the-Odds scaling calculations).
+*   Refer to `requirements.txt` for exact library versions.

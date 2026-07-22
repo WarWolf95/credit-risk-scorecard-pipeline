@@ -1,6 +1,7 @@
 import os
 import sys
 import logging
+from pathlib import Path
 import polars as pl
 
 # Configure logging
@@ -11,8 +12,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Constants
-PROJECT_DIR = r"C:\Projects\Credit_Risk_Analysis"
+# Constants — resolved dynamically
+PROJECT_DIR = str(Path(__file__).resolve().parent.parent)
 PROCESSED_DATA_PATH = os.path.join(PROJECT_DIR, "Source", "processed_data.parquet")
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "Credit_Risk_DA_project", "results")
 

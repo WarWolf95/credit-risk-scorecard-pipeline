@@ -84,8 +84,10 @@ def run_eda(file_path: str):
             print(f"{stat_name:<15} | " + " | ".join(formatted_vals))
         
 if __name__ == "__main__":
-    raw_data_path = r"C:\Projects\Credit_Risk_Analysis\Source\accepted_2007_to_2018Q4.csv"
-    if os.path.exists(raw_data_path):
-        run_eda(raw_data_path)
+    import sys
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from src.config import RAW_DATA_PATH
+    if os.path.exists(RAW_DATA_PATH):
+        run_eda(RAW_DATA_PATH)
     else:
-        print(f"Error: Dataset not found at {raw_data_path}")
+        print(f"Error: Dataset not found at {RAW_DATA_PATH}")

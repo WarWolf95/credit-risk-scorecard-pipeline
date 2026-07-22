@@ -5,7 +5,7 @@ This capsule acts as the core memory for the Credit Risk Data Analysis & Forecas
 ---
 
 ## 1. Project Overview & Context
-*   **Project Path**: `C:\Projects\Credit_Risk_Analysis\Credit_Risk_DA_project`
+*   **Project Path**: `Credit_Risk_DA_project/` (sibling to `src/`)
 *   **Data Source**: `Source/processed_data.parquet` (pre-processed and cleaned credit dataset)
 *   **Scope**: Descriptive data analysis, cohort (vintage) analysis of default rates, and time-series forecasting of loan volumes and default rates.
 *   **Role Alignment**: Mid-Level Data Analyst (experiencing with SQL, Python, Polars, time-series forecasting, and BI).

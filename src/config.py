@@ -1,7 +1,8 @@
 import os
+from pathlib import Path
 
-# Base paths
-PROJECT_DIR = r"C:\Projects\Credit_Risk_Analysis"
+# Base paths — resolved dynamically so the project is portable
+PROJECT_DIR = str(Path(__file__).resolve().parent.parent)
 RAW_DATA_PATH = os.path.join(PROJECT_DIR, "Source", "accepted_2007_to_2018Q4.csv")
 PROCESSED_DATA_PATH = os.path.join(PROJECT_DIR, "Source", "processed_data.parquet")
 

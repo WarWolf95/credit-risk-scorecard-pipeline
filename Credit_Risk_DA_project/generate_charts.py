@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -16,8 +17,8 @@ plt.rcParams.update({
     "figure.titlesize": 16
 })
 
-# Constants
-PROJECT_DIR = r"C:\Projects\Credit_Risk_Analysis"
+# Constants — resolved dynamically
+PROJECT_DIR = str(Path(__file__).resolve().parent.parent)
 RESULTS_DIR = os.path.join(PROJECT_DIR, "Credit_Risk_DA_project", "results")
 PLOTS_DIR = os.path.join(PROJECT_DIR, "Credit_Risk_DA_project", "plots")
 
